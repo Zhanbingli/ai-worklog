@@ -21,3 +21,10 @@ Project: ai-worklog-skill
 Decision: Set git user.name and user.email locally inside temporary publishing repositories so CI and first-time users do not need global git identity configuration.
 Evidence: remote worklog entry `2026-05-01 - Fix GitHub Actions git identity failure`.
 
+## 2026-05-01 - Add project config and legacy migration to AI worklog skill
+
+Context: Make the skill easier for teams to configure and migrate older worklogs into project-scoped storage
+Project: ai-worklog-skill
+Decision: Use .ai-worklog.json as intentional project configuration so users do not need to repeat project and remote arguments on every command.
+Evidence: remote worklog entry `2026-05-01 - Add project config and legacy migration to AI worklog skill`.
+

@@ -24,3 +24,11 @@ Cause: Not specified.
 Fix: See linked worklog entry.
 Evidence: remote worklog entry `2026-05-01 - Fix GitHub Actions git identity failure`.
 
+## 2026-05-01 - Add project config and legacy migration to AI worklog skill
+
+Symptom: Changing storage layouts without a migration path leaves older logs hard to retrieve; keep migration additive and non-destructive.
+Project: ai-worklog-skill
+Cause: Not specified.
+Fix: See linked worklog entry.
+Evidence: remote worklog entry `2026-05-01 - Add project config and legacy migration to AI worklog skill`.
+
