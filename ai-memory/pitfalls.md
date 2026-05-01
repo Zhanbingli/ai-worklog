@@ -21,3 +21,10 @@ Cause: Git-based publishing often requires a local working directory unless usin
 Fix: Use `/private/tmp` for transient assembly, push the sanitized result, and remove temporary directories after upload.
 
 Avoid: Keeping raw transcript files, local audit folders, or generated caches after the GitHub upload is complete.
+## 2026-05-01 - Add draft generation secret scanning and CI to AI worklog skill
+
+Symptom: Publishing tools that write public Markdown should fail closed when obvious secret or raw transcript markers are present.
+Cause: Not specified.
+Fix: See linked worklog entry.
+Evidence: remote worklog entry `2026-05-01 - Add draft generation secret scanning and CI to AI worklog skill`.
+

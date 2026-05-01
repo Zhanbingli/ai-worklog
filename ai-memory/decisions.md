@@ -29,3 +29,9 @@ Context: Make future AI work records publish to the dedicated ai-worklog reposit
 Decision: Use https://github.com/Zhanbingli/ai-worklog.git as this installation default remote worklog repository while allowing other users to pass their own remote.
 Evidence: remote worklog entry `2026-05-01 - Add remote worklog publishing to AI worklog skill`.
 
+## 2026-05-01 - Add draft generation secret scanning and CI to AI worklog skill
+
+Context: Make the reusable AI worklog skill lower-cost safer and easier to trust
+Decision: Prioritize low-cost drafting, pre-publication scanning, and CI before adding more user-facing workflow features.
+Evidence: remote worklog entry `2026-05-01 - Add draft generation secret scanning and CI to AI worklog skill`.
+
