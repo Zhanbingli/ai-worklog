@@ -35,3 +35,10 @@ Context: Make the reusable AI worklog skill lower-cost safer and easier to trust
 Decision: Prioritize low-cost drafting, pre-publication scanning, and CI before adding more user-facing workflow features.
 Evidence: remote worklog entry `2026-05-01 - Add draft generation secret scanning and CI to AI worklog skill`.
 
+## 2026-05-01 - Add project scoped memory bootstrap to AI worklog skill
+
+Context: Let future Codex sessions load only current-project memory from the remote ai-worklog repository without wasting tokens on unrelated logs
+Project: ai-worklog-skill
+Decision: Use project and tags fields as retrieval keys so bootstrap_memory.py can load only current-project logs and avoid wasting context on unrelated records.
+Evidence: remote worklog entry `2026-05-01 - Add project scoped memory bootstrap to AI worklog skill`.
+

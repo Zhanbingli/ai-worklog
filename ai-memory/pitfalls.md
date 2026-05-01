@@ -28,3 +28,11 @@ Cause: Not specified.
 Fix: See linked worklog entry.
 Evidence: remote worklog entry `2026-05-01 - Add draft generation secret scanning and CI to AI worklog skill`.
 
+## 2026-05-01 - Add project scoped memory bootstrap to AI worklog skill
+
+Symptom: Unscoped worklog entries are hard for agents to reuse safely because bootstrap has to either skip them or include global context that may be irrelevant.
+Project: ai-worklog-skill
+Cause: Not specified.
+Fix: See linked worklog entry.
+Evidence: remote worklog entry `2026-05-01 - Add project scoped memory bootstrap to AI worklog skill`.
+
