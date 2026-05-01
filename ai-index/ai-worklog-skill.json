@@ -2,6 +2,23 @@
   "project": "ai-worklog-skill",
   "latest_entries": [
     {
+      "id": "2026-05-01-ai-worklog-skill-fix-github-actions-git-identity-failure-8a93571ac6",
+      "date": "2026-05-01",
+      "title": "Fix GitHub Actions git identity failure",
+      "project": "ai-worklog-skill",
+      "tags": [
+        "ci",
+        "stability"
+      ],
+      "privacy": "public",
+      "commit": "251ab2c",
+      "files": [
+        "scripts/publish_worklog.py",
+        ".github/workflows/ci.yml"
+      ],
+      "summary": "Make publish_worklog.py work in CI and fresh environments without global git user configuration"
+    },
+    {
       "id": "2026-05-01-ai-worklog-skill-harden-ai-worklog-publishing-and-bootstrap-935e3950b6",
       "date": "2026-05-01",
       "title": "Harden AI worklog publishing and bootstrap",
@@ -30,11 +47,21 @@
   "decisions": [
     {
       "date": "2026-05-01",
+      "title": "Fix GitHub Actions git identity failure",
+      "text": "Set git user.name and user.email locally inside temporary publishing repositories so CI and first-time users do not need global git identity configuration."
+    },
+    {
+      "date": "2026-05-01",
       "title": "Harden AI worklog publishing and bootstrap",
       "text": "Use YAML frontmatter plus ai-index/<project>.json to make records both human-readable and machine-efficient for future Codex bootstrap."
     }
   ],
   "pitfalls": [
+    {
+      "date": "2026-05-01",
+      "title": "Fix GitHub Actions git identity failure",
+      "text": "GitHub Actions runners may not have git author identity, causing git commit to fail even when worklog generation and scanning succeed."
+    },
     {
       "date": "2026-05-01",
       "title": "Harden AI worklog publishing and bootstrap",

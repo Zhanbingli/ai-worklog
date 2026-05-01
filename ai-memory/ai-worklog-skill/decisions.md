@@ -14,3 +14,10 @@ Project: ai-worklog-skill
 Decision: Use YAML frontmatter plus ai-index/<project>.json to make records both human-readable and machine-efficient for future Codex bootstrap.
 Evidence: remote worklog entry `2026-05-01 - Harden AI worklog publishing and bootstrap`.
 
+## 2026-05-01 - Fix GitHub Actions git identity failure
+
+Context: Make publish_worklog.py work in CI and fresh environments without global git user configuration
+Project: ai-worklog-skill
+Decision: Set git user.name and user.email locally inside temporary publishing repositories so CI and first-time users do not need global git identity configuration.
+Evidence: remote worklog entry `2026-05-01 - Fix GitHub Actions git identity failure`.
+

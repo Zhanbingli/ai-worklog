@@ -16,3 +16,11 @@ Cause: Not specified.
 Fix: See linked worklog entry.
 Evidence: remote worklog entry `2026-05-01 - Harden AI worklog publishing and bootstrap`.
 
+## 2026-05-01 - Fix GitHub Actions git identity failure
+
+Symptom: GitHub Actions runners may not have git author identity, causing git commit to fail even when worklog generation and scanning succeed.
+Project: ai-worklog-skill
+Cause: Not specified.
+Fix: See linked worklog entry.
+Evidence: remote worklog entry `2026-05-01 - Fix GitHub Actions git identity failure`.
+
