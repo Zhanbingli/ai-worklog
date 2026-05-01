@@ -23,3 +23,9 @@ Rejected: Full prompt-plus-diff audit logging as the default mode, because it is
 Implication: Public records must be sanitized and marked with a privacy level. Private audit material belongs in `.ai-raw/`, which is ignored by git.
 
 Evidence: `ai-worklog-skill` privacy labels: `public`, `project`, `private`, and `never`.
+## 2026-05-01 - Add remote worklog publishing to AI worklog skill
+
+Context: Make future AI work records publish to the dedicated ai-worklog repository without leaving local checkout files
+Decision: Use https://github.com/Zhanbingli/ai-worklog.git as this installation default remote worklog repository while allowing other users to pass their own remote.
+Evidence: remote worklog entry `2026-05-01 - Add remote worklog publishing to AI worklog skill`.
+
