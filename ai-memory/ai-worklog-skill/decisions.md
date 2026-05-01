@@ -28,3 +28,10 @@ Project: ai-worklog-skill
 Decision: Use .ai-worklog.json as intentional project configuration so users do not need to repeat project and remote arguments on every command.
 Evidence: remote worklog entry `2026-05-01 - Add project config and legacy migration to AI worklog skill`.
 
+## 2026-05-01 - Add worklog validation and summary rollups
+
+Context: Make the AI worklog skill more reliable for other users and cheaper for future agents to read
+Project: ai-worklog-skill
+Decision: Publish should validate structured worklog records and update compact weekly/monthly summaries before pushing, so remote logs stay machine-readable by default.
+Evidence: remote worklog entry `2026-05-01 - Add worklog validation and summary rollups`.
+

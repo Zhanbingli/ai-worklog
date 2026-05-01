@@ -32,3 +32,11 @@ Cause: Not specified.
 Fix: See linked worklog entry.
 Evidence: remote worklog entry `2026-05-01 - Add project config and legacy migration to AI worklog skill`.
 
+## 2026-05-01 - Add worklog validation and summary rollups
+
+Symptom: Future agents waste context if bootstrap only reads raw monthly logs; read ai-index and ai-summary before detailed entries.
+Project: ai-worklog-skill
+Cause: Not specified.
+Fix: See linked worklog entry.
+Evidence: remote worklog entry `2026-05-01 - Add worklog validation and summary rollups`.
+

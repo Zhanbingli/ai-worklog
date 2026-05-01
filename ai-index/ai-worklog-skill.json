@@ -2,6 +2,30 @@
   "project": "ai-worklog-skill",
   "latest_entries": [
     {
+      "id": "2026-05-01-ai-worklog-skill-add-worklog-validation-and-summary-rollups-5e0666d9c6",
+      "date": "2026-05-01",
+      "title": "Add worklog validation and summary rollups",
+      "project": "ai-worklog-skill",
+      "tags": [
+        "validation",
+        "summary"
+      ],
+      "privacy": "public",
+      "commit": "18d7960a5f8d4df2c2b889b39a15d17e6781c71a",
+      "files": [
+        "scripts/validate_worklog.py",
+        "scripts/summarize_worklog.py",
+        "scripts/publish_worklog.py",
+        "scripts/bootstrap_memory.py",
+        "scripts/ai_worklog/common.py",
+        ".github/workflows/ci.yml",
+        "README.md",
+        "SKILL.md",
+        "references/log-format.md"
+      ],
+      "summary": "Make the AI worklog skill more reliable for other users and cheaper for future agents to read"
+    },
+    {
       "id": "2026-05-01-ai-worklog-skill-add-project-config-and-legacy-migration-to-ai-wo-20fa473040",
       "date": "2026-05-01",
       "title": "Add project config and legacy migration to AI worklog skill",
@@ -71,6 +95,11 @@
   "decisions": [
     {
       "date": "2026-05-01",
+      "title": "Add worklog validation and summary rollups",
+      "text": "Publish should validate structured worklog records and update compact weekly/monthly summaries before pushing, so remote logs stay machine-readable by default."
+    },
+    {
+      "date": "2026-05-01",
       "title": "Add project config and legacy migration to AI worklog skill",
       "text": "Use .ai-worklog.json as intentional project configuration so users do not need to repeat project and remote arguments on every command."
     },
@@ -86,6 +115,11 @@
     }
   ],
   "pitfalls": [
+    {
+      "date": "2026-05-01",
+      "title": "Add worklog validation and summary rollups",
+      "text": "Future agents waste context if bootstrap only reads raw monthly logs; read ai-index and ai-summary before detailed entries."
+    },
     {
       "date": "2026-05-01",
       "title": "Add project config and legacy migration to AI worklog skill",
