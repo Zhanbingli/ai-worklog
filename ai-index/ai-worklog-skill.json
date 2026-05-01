@@ -1,0 +1,44 @@
+{
+  "project": "ai-worklog-skill",
+  "latest_entries": [
+    {
+      "id": "2026-05-01-ai-worklog-skill-harden-ai-worklog-publishing-and-bootstrap-935e3950b6",
+      "date": "2026-05-01",
+      "title": "Harden AI worklog publishing and bootstrap",
+      "project": "ai-worklog-skill",
+      "tags": [
+        "security",
+        "stability",
+        "performance"
+      ],
+      "privacy": "public",
+      "commit": "6189820",
+      "files": [
+        "scripts/ai_worklog/common.py",
+        "scripts/publish_worklog.py",
+        "scripts/bootstrap_memory.py",
+        "scripts/append_worklog.py",
+        "scripts/scan_secrets.py",
+        ".github/workflows/ci.yml",
+        "README.md",
+        "SKILL.md",
+        "references/log-format.md"
+      ],
+      "summary": "Improve security stability engineering maintainability and bootstrap performance for the AI worklog skill"
+    }
+  ],
+  "decisions": [
+    {
+      "date": "2026-05-01",
+      "title": "Harden AI worklog publishing and bootstrap",
+      "text": "Use YAML frontmatter plus ai-index/<project>.json to make records both human-readable and machine-efficient for future Codex bootstrap."
+    }
+  ],
+  "pitfalls": [
+    {
+      "date": "2026-05-01",
+      "title": "Harden AI worklog publishing and bootstrap",
+      "text": "Regex-only Markdown parsing is fragile over time; stable ids and compact indexes reduce parsing ambiguity and token use."
+    }
+  ]
+}
