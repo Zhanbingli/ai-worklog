@@ -2,6 +2,28 @@
   "project": "ai-worklog-skill",
   "latest_entries": [
     {
+      "id": "2026-05-02-ai-worklog-skill-remove-personal-default-worklog-remote-01cc58d89b",
+      "date": "2026-05-02",
+      "title": "Remove personal default worklog remote",
+      "project": "ai-worklog-skill",
+      "tags": [
+        "safety",
+        "adoption"
+      ],
+      "privacy": "public",
+      "commit": "8453823406fa5f2bc0cd17cdd2616acb969cf5aa",
+      "files": [
+        "scripts/publish_worklog.py",
+        "scripts/bootstrap_memory.py",
+        "scripts/init_project.py",
+        "README.md",
+        "SKILL.md",
+        "references/log-format.md",
+        ".github/workflows/ci.yml"
+      ],
+      "summary": "Prevent the reusable AI worklog skill from silently publishing to a personal repository for other users"
+    },
+    {
       "id": "2026-05-01-ai-worklog-skill-add-worklog-validation-and-summary-rollups-5e0666d9c6",
       "date": "2026-05-01",
       "title": "Add worklog validation and summary rollups",
@@ -94,6 +116,11 @@
   ],
   "decisions": [
     {
+      "date": "2026-05-02",
+      "title": "Remove personal default worklog remote",
+      "text": "The reusable skill must not include a personal default worklog remote; users should configure their own remote through --remote, AI_WORKLOG_REMOTE, or .ai-worklog.json."
+    },
+    {
       "date": "2026-05-01",
       "title": "Add worklog validation and summary rollups",
       "text": "Publish should validate structured worklog records and update compact weekly/monthly summaries before pushing, so remote logs stay machine-readable by default."
@@ -115,6 +142,11 @@
     }
   ],
   "pitfalls": [
+    {
+      "date": "2026-05-02",
+      "title": "Remove personal default worklog remote",
+      "text": "A hard-coded maintainer remote in a reusable skill creates privacy and ownership risk because other users may accidentally publish records to the wrong repository."
+    },
     {
       "date": "2026-05-01",
       "title": "Add worklog validation and summary rollups",

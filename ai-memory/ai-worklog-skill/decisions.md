@@ -35,3 +35,10 @@ Project: ai-worklog-skill
 Decision: Publish should validate structured worklog records and update compact weekly/monthly summaries before pushing, so remote logs stay machine-readable by default.
 Evidence: remote worklog entry `2026-05-01 - Add worklog validation and summary rollups`.
 
+## 2026-05-02 - Remove personal default worklog remote
+
+Context: Prevent the reusable AI worklog skill from silently publishing to a personal repository for other users
+Project: ai-worklog-skill
+Decision: The reusable skill must not include a personal default worklog remote; users should configure their own remote through --remote, AI_WORKLOG_REMOTE, or .ai-worklog.json.
+Evidence: remote worklog entry `2026-05-02 - Remove personal default worklog remote`.
+

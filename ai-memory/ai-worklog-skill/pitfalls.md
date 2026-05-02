@@ -40,3 +40,11 @@ Cause: Not specified.
 Fix: See linked worklog entry.
 Evidence: remote worklog entry `2026-05-01 - Add worklog validation and summary rollups`.
 
+## 2026-05-02 - Remove personal default worklog remote
+
+Symptom: A hard-coded maintainer remote in a reusable skill creates privacy and ownership risk because other users may accidentally publish records to the wrong repository.
+Project: ai-worklog-skill
+Cause: Not specified.
+Fix: See linked worklog entry.
+Evidence: remote worklog entry `2026-05-02 - Remove personal default worklog remote`.
+
